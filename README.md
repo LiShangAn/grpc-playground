@@ -1,5 +1,5 @@
 # Go-GRPC playground
-
+This Project is a simple demo for grpc streaming communication between grpc server and client
 ---
 
 ### Generate grpc code via protoc
