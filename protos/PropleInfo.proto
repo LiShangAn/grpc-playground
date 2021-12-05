@@ -1,0 +1,38 @@
+syntax = "proto3";
+
+package people;
+
+option java_multiple_files = true;
+option java_package = "people";
+option java_outer_classname = "PeopleInfoProto";
+option go_package = "protos/people";
+
+service PeopleInfoService{
+  rpc PeopleInfo(stream PeopleInfoRequest) returns (PeopleInfoResponse){}
+}
+
+message PeopleInfoRequest {
+  string name = 1;
+  string address = 2;
+  string hobby  = 3;
+  int32 age = 6;
+  int32 height = 7;
+  int32 weight = 8;
+}
+
+message PeopleInfoResponse {
+  bool status= 1;
+  string message = 2;
+  repeated DataErrors errors = 3;
+}
+
+message DataErrors {
+  string code = 1;
+  string description= 2;
+}
+
+
+
+
+
+
