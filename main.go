@@ -11,11 +11,6 @@ import (
 )
 
 type service struct {
-	// pb.UnimplementedMonitoringTransferServiceServer
-	// pb.UnimplementedImageDataTransferServiceServer
-	// pb.UnimplementedDetailDataTransferServiceServer
-	// pb.UnimplementedAnalysisDataTransferServiceServer
-
 	pb.UnimplementedPeopleInfoServiceServer
 }
 
